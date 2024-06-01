@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+html, body{
+    margin: 0;
+    padding: 0;
+    font-family: "IBM Plex Sans", sans-serif;
+    background-color: rgba(255, 255, 255, 1);
+    color: #141313;
+    box-sizing: border-box;
+    width: 100%;
+    min-width: 100vh;
+    height: 100%;
+    overflow: auto;
+} 
+
+/* A left navbar */
+.sidenav{  
+    height: 100vh;
+    width: 285px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(20, 19, 19, 1);
+    display: block;
+    overflow-y: auto; /* Permet le défilement si le contenu de la barre latérale est plus grand que la hauteur de la fenêtre */
+
+}
+/* The menus in Navbar */
+.menu {
+    top: 90px;
+    left: 48px;
+    width: 189px;
+    height: auto;
+    position: fixed;
+}
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+.menu li {
+    gap: 20px;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-top: 10px;
+}
+.menu a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 1);
+    display: block;
+    height: auto;
+    line-height: 25px;
+    font-size: 16px;
+    font-stretch: normal;
+    font-weight: normal;
+    font-style: italic;
+    text-transform: uppercase;
+    font-family: "IBM Plex Sans";
+}
+.menu a:hover {
+    text-decoration: line-through;
+    text-decoration-color: transparent;
+    text-decoration-style: solid;
+    background-image: linear-gradient(270.16deg, #FFB147 5.74%, #FF6C63 50.64%, #B86ADF 92.05%);
+    text-decoration-thickness: 4px;
+    background-size: 100% 4px; /* Ajuster la hauteur de la ligne */
+    background-repeat: repeat-x;
+    background-position: center;
+}
+.menu a:active{
+    text-decoration: line-through;
+    text-decoration-color: transparent;
+    text-decoration-style: solid;
+    background-image: linear-gradient(270.16deg, #FFB147 5.74%, #FF6C63 50.64%, #B86ADF 92.05%);
+    transform: translate(2px);
+    
+}
+
+.logotype{
+    top: 35px;
+    left: 48px;
+    width: 189px;
+    height: 80px;
+    position: fixed; 
+}
+.logotype a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 1);
+    display: block;
+    line-height: 15px;
+    font-size: 20px;
+    font-stretch: normal;
+    font-weight: bold;
+    text-transform:capitalize;
+    font-family: "IBM Plex Sans";
+}
+
+.social_media{
+width: 40px;
+height: 144px;
+top: 390px;
+left: 48px;
+gap: 12px;
+opacity: 0px;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+position: fixed;
+}
+.social_media img{
+top: 0;
+left: 0;
+width: 30px;
+height: 30px;
+
+}
+
+.Copyright{
+    top: 530px;
+    left: 48px;
+    color: rgba(255, 255, 255, 1);
+    width: 189px;
+    height: auto;
+    position: fixed;
+}
+
+.Copyright p{
+    font-size: 16;
+    font-style: italic;
+    font-family: 'IBM Plex Sans';
+    font-weight: 400;
+    line-height: 22px;
+    font-stretch: normal;
+    text-decoration: none;
+}
+
+/* Home page content */
+.content {
+    margin-left: 285px;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+}
+
+/* My home page title */
+.title {  
+/* background-color: red; */
+display: block;
+width: 400px;
+height: 538px;
+}
+
+/* My home page profile */
+.profil{
+    display: block;
+    width: 500px;
+    height: 538px;
+    /* background-color: green; */
+}
+/* Sidebar social media */
+.rigth_social_media{
+    display: block;
+    background-color: yellow;
+    width: 30px;
+    height: 316px;
+}
+
+/* Div Title Content */
+
+.title_name{
+    font-family: "IBM Plex Sans";
+    font-size: 70px;
+    font-weight: 400;
+    line-height: 80px;
+    text-align: left;
+    padding-left: 35px;
+    padding-top: 60px;
+    text-transform: uppercase;
+    color: #141313;
+    margin-bottom: 2px;
+    background-image: url(images/Vector_name.svg);
+    background-repeat: no-repeat;
+    background-position: 1px 55px;
+    background-size: 160px;
+} 
+.firsName{
+    font-family: "IBM Plex Sans";
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 80px;  
+}
+
+
+.para_title {
+font-family: "IBM Plex Sans";
+font-size: 20px;
+font-style: italic;
+font-weight: 500;
+line-height: 32px;
+letter-spacing: -0.03em;
+text-align: left;
+margin: 0;
+padding-left: 35px;
+}
+
+.para_title_span{
+font-weight: 700;
+}
+
+.btn_contact{
+width: 185px;
+height: 35px;
+padding: 5px 20px 5px 20px; 
+background: #141313;
+margin: 35px;
+border: none;
+text-decoration: none;
+display: inline-block;
+transition-duration: 0.4s;
+cursor: pointer;
+
+font-family: "IBM Plex Sans";
+font-size: 18px;
+font-weight: 500;
+/* line-height: 24px; */
+text-align: center;
+color: #FFFFFF;
+}
+.btn_contact:hover{
+   background: linear-gradient(270.16deg, #FFB147 5.74%, #FF6C63 50.64%, #B86ADF 92.05%);
+}
+.btn_contact:active{
+    background-color: #141313;
+    transform: translate(2px);
+}
+
+ /* Contact info */
+.home_contact{
+
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 48px;
+
+width: 400px;
+height: 32px;
+padding-left: 35px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+}
+
+.home_contact a{
+font-family: "IBM Plex Sans";
+font-size: 16px;
+font-style: italic;
+font-weight: 700;
+line-height: 24px;
+text-align: left;
+letter-spacing: -0.03em;
+text-decoration: none;
+color: #141313;
+}
+.home_contact a:hover {
+
+text-decoration: line-through;
+text-decoration-color: transparent;
+text-decoration-style: solid;
+background-image: linear-gradient(270.16deg, #FFB147 5.74%, #FF6C63 50.64%, #B86ADF 92.05%);
+text-decoration-thickness: 4px;
+background-size: 100% 4px; /* Ajuster la hauteur de la ligne */
+background-repeat: repeat-x;
+background-position: center;
+
+  }
+
+
+.imgProfile{
+display: block;
+position: absolute;
+width: 500px;
+height: 538px;
+/* background: url(Herman_photo-removebg-preview.png); */
+
+}
