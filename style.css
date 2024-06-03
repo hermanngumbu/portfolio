@@ -126,7 +126,16 @@ height: 30px;
 .social-icon:hover {
     color: #FFB147; /* Changer de couleur au survol */
 }
-
+.social-icon-right {
+    color: #141313;
+    font-size: 1.5em;
+    text-decoration: none;
+    transition: color 0.3s;
+    margin-bottom: 10px;
+}
+.social-icon-right:hover {
+    color: #FFB147; /* Changer de couleur au survol */
+}
 .Copyright{
     top: 530px;
     left: 48px;
@@ -158,7 +167,7 @@ height: 30px;
 .title {  
 /* background-color: red; */
 display: block;
-width: 400px;
+width: 430px;
 height: 538px;
 }
 
@@ -171,10 +180,13 @@ height: 538px;
 }
 /* Sidebar social media */
 .rigth_social_media{
-    display: block;
-    background-color: yellow;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
     width: 30px;
     height: 316px;
+    justify-content: center;
 }
 
 /* Div Title Content */
