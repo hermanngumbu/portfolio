@@ -110,12 +110,21 @@ flex-direction: column;
 align-items: flex-start;
 position: fixed;
 }
-.social_media img{
+/* .social_media img{
 top: 0;
 left: 0;
 width: 30px;
 height: 30px;
 
+} */
+.social-icon {
+    color: #fff;
+    font-size: 1em;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.social-icon:hover {
+    color: #FFB147; /* Changer de couleur au survol */
 }
 
 .Copyright{
